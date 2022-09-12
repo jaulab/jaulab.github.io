@@ -1,0 +1,96 @@
+.carrito{
+
+  font: 10px;	
+  text-align: left;
+  font: Times New Roan, serif;
+  color: #8e8d8d;
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+
+td, th{
+	
+  border-bottom: 1px dashed grey;
+  padding: 2px;
+
+}
+
+.cold{
+	
+  width: 70%;
+  border-left: 2px solid black;
+
+}
+
+.coli{
+	
+  width: 30%;
+  border-right: 2px solid black;  
+  border-bottom: none;
+	
+}
+
+.pizza{
+
+  font: 20px;
+  color: black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  
+}
+
+.pizzaid{
+
+  text-align: left;
+  padding: 5px;
+  border-bottom: none;
+	
+}
+
+.editar{
+
+  text-align: center;
+  padding: 5px;
+  border-bottom: none;
+	
+}
+
+.primerafila{
+	
+  font: 20px;	
+  text-align: center;
+  padding: 5px;
+  border-bottom: solid;
+	
+}
+
+.item{
+  	
+  border-bottom: none;
+  border-left: 2px solid black;
+  
+}
+
+.prod{
+
+  border-left: 2px solid black;
+  text-indent: 20px;
+	
+}
+
+.precio{
+
+  text-align: center;
+  border-right: 2px solid black;
+	
+}
+
+.totalpizza{
+
+  color: black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  
+}

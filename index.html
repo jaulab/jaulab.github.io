@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="jaulab, audio 3D, audio inmersivo, ambisonics, upna">
+    <meta name="author" content="JaulaB">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JAULAB | Instalación sonora tridimensional</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="CSS/tooltip.css">
+    <link rel="shortcut icon" href="res/owl_front.png">
+
+  </head>
+
+  <body>
+
+    <section class="navigation w3-metro-light-blue w3-container">
+      <button onclick="goToTop()" id="back-to-top" title="Go to top"><i class="fa fa-toggle-up"></i></button>
+      <nav class="nav-container">
+        <div class="logo"> 
+          <a href="index.html"> <img title="Inicio" src="./res/jaulab.png" alt="Jaulab"> </img> </a>
+        </div>
+        <div class="nav-links">
+	        <div class="links">
+	          <a href="#noticias" >NOTICIAS</a>
+	          <a href="#proyecto" >PROYECTO</a>
+	          <a href="#recursos" >RECURSOS</a>
+	          <a href="#contacto" >CONTACTO</a>          
+	        </div>
+	        <div id="mobile-sidenav" class="mobile-links w3-sand">
+	          <a href="javascript:void(0)" class="closebtn w3-round" onclick="toggleMobileNavigation()">&times;</a>
+	          <a href="#noticias" onclick="toggleMobileNavigation()">NOTICIAS</a>
+	          <a href="#proyecto" onclick="toggleMobileNavigation()">PROYECTO</a>
+	          <a href="#recursos" onclick="toggleMobileNavigation()">RECURSOS</a>
+	          <a href="#contacto" onclick="toggleMobileNavigation()">CONTACTO</a>
+	        </div>
+	        <div class="language">
+	        	<a href="#eus">EUS</a> |
+	          <a href="#es">ES</a> |
+	          <a href="#en">EN</a>
+	        </div>
+      	</div>
+      </nav>
+    </section>
+
+   <section class="slideShow w3-container w3-panel" style="padding: 50px;">
+      <div class="mySlides">
+      	<img src="./res/jaulab.png" alt="Estella"> <h2> 2º Encuentro maker Estella</h2> </img>	
+      </div>
+
+      <div class="mySlides">
+        <img src="./res/back.jpg" alt="Back"> <h2>LAB</h2> </img>
+      </div>
+
+      <div class="mySlides">
+        <p><q><em>The team at CONSULTCORP will help you steer your idea in the right direction, reducing all the risks you might encounter on your own! They surely did mine.</em></q></p>
+        <p class="author"><strong>- Dean Doe, Founder of COMPANY-Z</strong></p>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>      
+    </section>
+
+		<!---
+   	<div id="topnav" class="topnav">
+   		<div class="topbar" style="overflow:auto;height: 44px;">
+				<a id="jaulabPage" class="topbar-item button active" href="/index.html" name="topBarButton" title="Jaulab">Inicio</a>
+				<a id="newsPage" class="topbar-item button" href="/news" name="topBarButton" title="Noticias">Noticias</a>
+				<a id="aboutPage" class="topbar-item button" href="/about" name="topBarButton" title="Proyecto">Proyecto</a>
+				<a id="resPage" class="topbar-item button" href="/resources" name="topBarButton" title="Recursos">Recursos</a>
+				<a id="contactPage" class="topbar-item button" href="/contact" name="topBarButton" title="Contacto">Contacto</a>
+			</div>
+   	</div>
+   	
+    <section>
+    	<ul class="navBar">
+			  <li><a class="active" href="index.html">Jaulab</a></li>
+			  <li><a href="/news">Noticias</a></li> 
+			  <li><a href="/about">Proyecto</a></li>
+			  <li><a href="/resources">Recursos</a></li>
+			  <li><a href="/contact">Contacto</a></li>
+			</ul>
+    </section>
+    --->
+    <section id="mainContainer" class="container">
+    	<!---<img src="./res/back.png"> </img>--->
+		</section>
+    
+	<script type="text/javascript" src="JS/goToTop.js"></script>
+	<script type="text/javascript" src="JS/slideShow.js"></script>
+	<script type="text/javascript" src="JS/main.js"></script>
+
+  </body>
+
+</html>
