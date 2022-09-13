@@ -268,3 +268,36 @@ a {
 .welcome-text .welcome-logo{
   width: 30%;
 }
+
+/* CONTAINERS */
+.content-container{
+  width: 96%;
+  margin: 2%;
+  border: 2px solid #000000;
+  border-radius: 15px;
+}
+
+.content-container .noticias{
+  height: 500px;
+}
+
+.inside-container{
+  width: 96%;
+  margin: 2%;
+}
+
+/* CONTAINER NOTICIAS */
+.news-container {
+  width: 30%;
+  height: 350px;
+  padding: 1%;
+  margin-right: 0.5%;
+  text-align: justify;
+  border: 2px solid #000000;
+  border-radius: 15px;
+  display: inline-flex;
+}
+
+.content-container .proyecto{
+}
+
