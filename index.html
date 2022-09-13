@@ -18,18 +18,17 @@
 
   <body>
 
-    <section class="navigation w3-metro-light-blue w3-container">
-      <button onclick="goToTop()" id="back-to-top" title="Go to top"><i class="fa fa-toggle-up"></i></button>
-      <nav class="nav-container">
-        <div class="logo"> 
+  	<header>
+  		<div class="top-nav">
+  			<div class="logo"> 
           <a href="index.html"> <img title="Inicio" src="./res/jaulab.png" alt="Jaulab"> </img> </a>
         </div>
         <div class="nav-links">
 	        <div class="links">
-	          <a href="#noticias" >NOTICIAS</a>
-	          <a href="#proyecto" >PROYECTO</a>
-	          <a href="#recursos" >RECURSOS</a>
-	          <a href="#contacto" >CONTACTO</a>          
+	          <a href="#noticias" class="link">NOTICIAS</a>
+	          <a href="#proyecto" class="link">PROYECTO</a>
+	          <a href="#recursos" class="link">RECURSOS</a>
+	          <a href="#contacto" class="link">CONTACTO</a>          
 	        </div>
 	        <div id="mobile-sidenav" class="mobile-links w3-sand">
 	          <a href="javascript:void(0)" class="closebtn w3-round" onclick="toggleMobileNavigation()">&times;</a>
@@ -38,6 +37,59 @@
 	          <a href="#recursos" onclick="toggleMobileNavigation()">RECURSOS</a>
 	          <a href="#contacto" onclick="toggleMobileNavigation()">CONTACTO</a>
 	        </div>
+  		</div>
+  	</header>
+
+  	<section class="slide-section">
+  		<div class="mySlides">
+      	<img src="./res/Slides/slide_1.JPG" alt="Slide_1"></img>	
+      </div>
+      <div class="mySlides">
+      	<img src="./res/Slides/slide_2.jpg" alt="Slide_2"></img>	
+      </div>
+      <div class="mySlides">
+      	<img src="./res/Slides/slide_3.jpg" alt="Slide_3"></img>	
+      </div>
+      <div class="mySlides">
+      	<img src="./res/Slides/slide_4.jpg" alt="Slide_4"></img>	
+      </div>
+      <div class="mySlides">
+      	<img src="./res/Slides/slide_5.jpg" alt="Slide_5"></img>	
+      </div>
+      <div class="mySlides">
+      	<img src="./res/Slides/slide_6.JPG" alt="Slide_6"></img>	
+      </div>
+      <div class="mySlides">
+      	<img src="./res/Slides/slide_7.jpg" alt="Slide_7"></img>	
+      </div>
+      <div class="mySlides">
+      	<img src="./res/Slides/slide_8.jpg" alt="Slide_8"></img>	
+      </div>
+      <div class="mySlides">
+      	<img src="./res/Slides/slide_9.JPG" alt="Slide_9"></img>	
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+      </div>
+  	</section>
+
+
+  	<!---
+    <section class="navigation w3-metro-light-blue w3-container">
+      <button onclick="goToTop()" id="back-to-top" title="Go to top"><i class="fa fa-toggle-up"></i></button>
+      <nav class="nav-container">
 	        <div class="language">
 	        	<a href="#eus">EUS</a> |
 	          <a href="#es">ES</a> |
@@ -56,11 +108,6 @@
         <img src="./res/back.jpg" alt="Back"> <h2>LAB</h2> </img>
       </div>
 
-      <div class="mySlides">
-        <p><q><em>The team at CONSULTCORP will help you steer your idea in the right direction, reducing all the risks you might encounter on your own! They surely did mine.</em></q></p>
-        <p class="author"><strong>- Dean Doe, Founder of COMPANY-Z</strong></p>
-      </div>
-
       <a class="prev" onclick="plusSlides(-1)">❮</a>
       <a class="next" onclick="plusSlides(1)">❯</a>
 
@@ -68,9 +115,17 @@
       <div class="dot-container">
         <span class="dot" onclick="currentSlide(1)"></span> 
         <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
       </div>      
     </section>
+    --->
+
+
+	<section class="about w3-padding-large w3-container" id="noticias">
+      <div class="content container w3-round-large">
+        <h2 style="text-align: center;">NOTICIAS</h2>
+        <p> Añadir noticias. </p>
+      </div>
+ </section>
 
 		<!---
    	<div id="topnav" class="topnav">
@@ -96,6 +151,12 @@
     <section id="mainContainer" class="container">
     	<!---<img src="./res/back.png"> </img>--->
 		</section>
+
+		<footer class="text-center">
+			<div class="site-name"> Grupo de Acústica de la Universidad Pública de Navarra </div>
+			<div> Campus de Arrosadia | Avenida Cataluña, s/n | 31006 Pamplona (Navarra) </div>
+
+		</footer>
     
 	<script type="text/javascript" src="JS/goToTop.js"></script>
 	<script type="text/javascript" src="JS/slideShow.js"></script>

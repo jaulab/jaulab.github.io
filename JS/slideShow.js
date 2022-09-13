@@ -1,4 +1,4 @@
-let slideIndex = 2;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -8,6 +8,11 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
+
+function changeSlidesAuto() {
+   plusSlides(1);
+   setTimeout(changeSlidesAuto, 3000)
+ }
 
 function showSlides(n) {
   let i;
@@ -24,3 +29,5 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+setTimeout(changeSlidesAuto, 3000)
