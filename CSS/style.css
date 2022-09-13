@@ -11,6 +11,7 @@ body {
 }
 
 header {
+  top: 0;
   position: relative;
   display: block;
   width: 100%;
@@ -300,6 +301,5 @@ a {
 }
 
 .proyecto{
-  align-items: center;
 }
 
