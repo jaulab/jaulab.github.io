@@ -22,9 +22,12 @@ header {
 }
 
 /* FOOTER */
+footer {
+  margin-bottom: 20px;
+}
 footer .site-name {
   font-size: 1.1rem;
-  color: #0390fc;
+  color: #cfb734;
   font-weight: bold;
 }
 
@@ -41,7 +44,7 @@ footer .site-name {
   align-items: left;
 }
 
-a {
+.top-nav a {
   text-decoration: none; 
 }
 
@@ -72,7 +75,7 @@ a {
 }
 
 .nav-links{
-  background-color: #c9b322;
+  background-color: #cfb734;
   width: 100%;
 }
 
@@ -179,7 +182,6 @@ a {
   height: 800px;
 }
 
-
 /*Slides*/
 
 .mySlides {
@@ -243,7 +245,7 @@ a {
   width: 15px;
   margin: 0 2px;
   /*background-color: rgba(153, 255, 187, 0.2);*/
-  background-color: rgba(201, 179, 34, 0.2);
+  background-color: rgba(207, 183, 52, 0.2);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -252,13 +254,13 @@ a {
 /* Add a background color to the active dot/circle */
 .active,
 .dot:hover {
-  background-color: rgba(201, 179, 34, 1);
+  background-color: rgba(207, 183, 52, 1);
 }
 
 .welcome-text{
   font-family: Lucida Console, sans-serif;
   font-size: 40px;
-  color: #c9b322;
+  color: #cfb734;
   width: 60%;
   padding-left: 20%;
   text-align: center;
@@ -272,6 +274,7 @@ a {
 
 /* CONTAINERS */
 .content-container{
+  display: inline-grid;
   width: 96%;
   margin: 2%;
   border: 2px solid #000000;
@@ -283,23 +286,66 @@ a {
   height: 500px;
 }
 
-.inside-container{
-  width: 96%;
-  margin: 2%;
+.grid-item-header{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  padding: 1%;
+}
+
+.grid-items{
+  display: inline-grid;
+  grid-template-rows: 10% 75% 15%;
+  grid-template-columns: 100%;
+  text-align: center;
+  width: 25%;
+  margin: 1%;
+  padding: 1%;
+  border: 2px solid #000000;
+  border-radius: 15px;
+  align-content: center;
+}
+
+.grid-items > div {
+  padding: 1%;
 }
 
 /* CONTAINER NOTICIAS */
-.news-container {
-  width: 30%;
-  height: 350px;
-  padding: 1%;
-  margin-right: 0.5%;
-  text-align: justify;
-  border: 2px solid #000000;
-  border-radius: 15px;
-  display: inline-flex;
+
+.news{
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 20% 80%;
 }
 
-.proyecto{
+.news-image{
+  height: 100%;
+  width: 100%;
 }
 
+/* CONTINER GRUPO */
+.names{
+  font-weight: bold;
+}
+
+.frase{
+  top: 50px;
+  display: relative;
+}
+
+/* BOTÓN SABER MÁS */
+.mas-button{
+  height: 100%;
+  width: 25%;
+  border-radius: 10px;
+  background-color: #cfb734;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.mas-button:hover {
+  background-color: rgba(207, 183, 52, 0.4);
+  font-size: 18px;
+}
