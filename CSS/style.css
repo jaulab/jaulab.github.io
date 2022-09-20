@@ -286,6 +286,14 @@ a {
   height: 500px;
 }
 
+.contacto{
+  height: 500px;
+}
+
+.proyecto{
+  height: 1000px;
+}
+
 .grid-item-header{
   grid-column-start: 1;
   grid-column-end: 4;
@@ -297,7 +305,7 @@ a {
   grid-template-rows: 10% 75% 15%;
   grid-template-columns: 100%;
   text-align: center;
-  width: 25%;
+  width: 28%;
   margin: 1%;
   padding: 1%;
   border: 2px solid #000000;
@@ -308,6 +316,11 @@ a {
 .grid-items > div {
   padding: 1%;
 }
+
+.yt {
+  margin-left: 15%;
+}
+
 
 /* CONTAINER NOTICIAS */
 
@@ -321,7 +334,7 @@ a {
   width: 100%;
 }
 
-/* CONTINER GRUPO */
+/* CONTAINER GRUPO */
 .names{
   font-weight: bold;
 }
@@ -346,6 +359,95 @@ a {
 }
 
 .mas-button:hover {
+  background-color: rgba(207, 183, 52, 0.4);
+  font-size: 18px;
+}
+
+
+
+/* FORMULARIO CONTACTO */
+form {
+  /* Centrar el formulario en la página */
+  margin: 0 auto;
+  width: 100%;
+  /* Esquema del formulario */
+  padding: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Tamaño y alineación uniforme */
+  display: inline-block;
+  width: 200px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+     Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+  font: 1em sans-serif;
+
+  /* Tamaño uniforme del campo de texto */
+  width: 400px;
+  height: 26px;
+  box-sizing: border-box;
+
+  /* Hacer coincidir los bordes del campo del formulario */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Destacado adicional para elementos que tienen el cursor */
+  border-color: #000;
+}
+
+textarea {
+  /* Alinear los campos de texto multilínea con sus etiquetas */
+  vertical-align: top;
+
+  /* Proporcionar espacio para escribir texto */
+  height: 15em;
+  width: 80%;
+}
+
+li .send-button-li{
+  /* Alinear los botones con los campos de texto */
+  padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
+  height: 30%;
+  align-items: center;
+}
+
+button {
+  /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
+     entre las etiquetas y sus campos de texto */
+  margin-left: .5em;
+}
+
+.send-button{
+  height: 50px;
+  width: 80px;
+  border-radius: 10px;
+  background-color: #cfb734;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.send-button:hover {
   background-color: rgba(207, 183, 52, 0.4);
   font-size: 18px;
 }

@@ -42,6 +42,10 @@
   		</div>
   	</header>
 
+  	<section class="navigation w3-metro-light-blue w3-container">
+      <button onclick="goToTop()" id="back-to-top" title="Go to top"><i class="fa fa-toggle-up">↑</i></button>
+    </section>
+
   	<section class="slide-section">
   		<div class="mySlides">
       	<img src="./res/Slides/Slide_1.jpg" alt="Slide_1"></img>	
@@ -154,8 +158,8 @@
       	<div class="grid-item-header">
         	<h2 class="text-center">PROYECTO</h2>
         </div>
-        <div>
-        	<iframe width="1120" height="630" src="https://www.youtube.com/embed/ZRZ_fYRAMSM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="yt">
+        	<iframe width="80%" height="900" src="https://www.youtube.com/embed/ZRZ_fYRAMSM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       	</div>
 	    </div>
 	  </section>
@@ -164,19 +168,41 @@
       <div class="inside-container">
       	<div class="grid-item-header">
         	<h2 class="text-center">EQUIPO</h2>
+        </div>
         	<p class="text-center"> Ricardo San Martin ricardo.sanmartin@unavarra.es</p>
         	<p class="text-center"> Rubén Eguinoa ruben.eguinoa@unavarra.es </p>
         	<p class="text-center"> Asier Beunza asier.beunza@unavarra.es </p>
-      	</div>
       </div>
 	  </section>
 
 	  <section class="content-container contacto" id="contacto">
       <div class="inside-container">
-      	<div class="grid-item-header">
+
         	<h2 class="text-center">CONTACTO</h2>
-        <div class="grid-item-header">
-        <p class="text-center"> ricardo.sanmartin@unavarra.es </p>
+
+
+        <form action="/formulario" method="post">
+				 <ul>
+				  <li>
+				    <label for="name">Nombre:</label>
+				    <input type="text" id="name" name="user_name">
+				  </li>
+				  <li>
+				    <label for="mail">Correo electrónico:</label>
+				    <input type="email" id="mail" name="user_mail">
+				  </li>
+				  <li>
+				    <label for="msg">Mensaje:</label>
+				    <textarea id="msg" name="user_message"></textarea>
+				  </li>
+				  <li class="send-button-li">
+					  <button type="submit" class="send-button">Enviar</button>
+					</li>
+				 </ul>
+				</form>
+
+
+        
       </div>
 	  </section>
 
