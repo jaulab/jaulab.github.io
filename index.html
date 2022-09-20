@@ -207,10 +207,10 @@
 		  <section class="content-container contacto" id="contacto">
 	      <div class="inside-container">
 
-	        	<h2 class="text-center">CONTACTO</h2>
+	        <h2 class="text-center">CONTACTO</h2>
 
 
-	        <form action="/formulario" method="post">
+	        <form action="formulario.php" method="post">
 					 <ul>
 					  <li>
 					    <label for="name">Nombre:</label>
@@ -225,7 +225,7 @@
 					    <textarea id="msg" name="user_message"></textarea>
 					  </li>
 					  <li class="send-button-li">
-						  <button type="submit" class="send-button">Enviar</button>
+						  <button type="submit" class="send-button" onclick="enviarFormulario()">Enviar</button>
 						</li>
 					 </ul>
 					</form>

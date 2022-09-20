@@ -16,3 +16,7 @@ function saberMas(id){
       break;
   }
 }
+
+function enviarFormulario(){
+  
+}
