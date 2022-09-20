@@ -22,5 +22,5 @@ function enviarFormulario(){
 }
 
 function download(id){
-  window.open("https://github.com/jaulab/AmbisonicsEnergiesComparer, '_blank');
+  window.open("https://github.com/jaulab/AmbisonicsEnergiesComparer", '_blank');
 }
