@@ -24,3 +24,23 @@ function enviarFormulario(){
 function download(id){
   window.open("https://github.com/jaulab/AmbisonicsEnergiesComparer", '_blank');
 }
+
+function recursosClicked(){
+
+  fetch('./recursos.html')
+  .then((response) => response.json())
+  .then((data) => document.getElementById('content').innerHTML = data);
+
+  //var xhr= new XMLHttpRequest();
+  //xhr.open('GET', '../recursos.html', true);
+  //xhr.onreadystatechange= function() {
+  //    if (this.readyState!==4) return;
+  //    if (this.status!==200) return; // or whatever error handling you want
+  //    document.getElementById('content').innerHTML= this.responseText;
+  //};
+  //xhr.send();
+
+
+  //const mainBody = document.getElementById("content");
+  //mainBody.innerHTML = "./recursos.html";
+}
