@@ -19,27 +19,35 @@
   <body>
 
   	<header>
-  		<div class="top-nav">
-  			<div class="logo"> 
-          <a href="index.html"> <img title="Inicio" src="./res/jaulab.png" alt="Jaulab"> </img> </a>
-        </div>
-        <div class="nav-links">
-	        <div class="links">
-	          <a href="./index.html#noticias" class="link">NOTICIAS</a>
-	          <a href="./index.html#proyecto" class="link">PROYECTO</a>
-	          <a href="./index.html#grupo" class="link">GRUPO</a>
-	          <a href="./recursos.html" class="link">RECURSOS</a>
-	          <a href="./index.html#contacto" class="link">CONTACTO</a>          
-	        </div>
-	        <div id="mobile-sidenav" class="mobile-links w3-sand">
-	          <a href="javascript:void(0)" class="closebtn w3-round" onclick="toggleMobileNavigation()">&times;</a>
-	          <a href="#noticias" onclick="toggleMobileNavigation()">NOTICIAS</a>
-	          <a href="#proyecto" onclick="toggleMobileNavigation()">PROYECTO</a>
-	          <a href="./recursos.html" onclick="toggleMobileNavigation()">RECURSOS</a>
-	          <a href="#contacto" onclick="toggleMobileNavigation()">CONTACTO</a>
-	        </div>
-
-  		</div>
+		<nav class="navbar" role="navigation">
+			<!--- WEB MENU --->
+			<div id="navbar" class="top-nav">  				
+				<ul class="nav navbar-nav navbar-left">
+					<li class="menu_item_logo">
+						<a href="index.html"> <img title="Inicio" src="./res/jaulab.png" alt="Jaulab"> </img> </a>
+					</li>
+					<li class="menu_item menu_border_item">
+						<a href="index.html#noticias" class="link">NOTICIAS</a>
+					</li>
+					<li class="menu_item menu_border_item">
+						<a href="index.html#proyecto" class="link">PROYECTO</a>
+					</li>
+					<li class="menu_item menu_border_item">
+						<a href="index.html#grupo" class="link">GRUPO</a>
+					</li>
+					<li class="menu_item menu_border_item">
+						<a href="./recursos.html" class="link">RECURSOS</a>
+					</li>
+					<li class="menu_item menu_border_item">
+						<a href="./investigacion.html" class="link">INVESTIGACIÓN</a>
+					</li>
+					<li class="menu_item">
+						<a href="index.html#contacto" class="link">CONTACTO</a>
+					</li>
+				</ul>		
+			<!--- /WEB MENU --->
+			</div>
+  		</nav>
   	</header>
 
   	<main id="content" role="main">
