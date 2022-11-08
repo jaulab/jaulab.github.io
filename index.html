@@ -19,6 +19,38 @@
   <body>
 
   	<header>
+  		<nav class="navbar" role="navigation">
+  				<!--- WEB MENU --->
+	  			<div id="navbar" class="top-nav">  				
+						<ul class="nav navbar-nav navbar-left">
+							<li class="menu_item_logo">
+								<a href="index.html"> <img title="Inicio" src="./res/jaulab.png" alt="Jaulab"> </img> </a>
+							</li>
+							<li class="menu_item menu_border_item">
+								<a href="#noticias" class="link">NOTICIAS</a>
+							</li>
+							<li class="menu_item menu_border_item">
+								<a href="#proyecto" class="link">PROYECTO</a>
+							</li>
+							<li class="menu_item menu_border_item">
+								<a href="#grupo" class="link">GRUPO</a>
+							</li>
+							<li class="menu_item menu_border_item">
+								<a href="./recursos.html" class="link">RECURSOS</a>
+							</li>
+							<li class="menu_item menu_border_item">
+								<a href="./investigacion.html" class="link">INVESTIGACIÓN</a>
+							</li>
+							<li class="menu_item">
+								<a href="#contacto" class="link">CONTACTO</a>
+							</li>
+						</ul>		
+					<!--- /WEB MENU --->
+				</div>
+  		</nav>
+
+
+  		<!---
   		<div class="top-nav">
   			<div class="logo"> 
           <a href="index.html"> <img title="Inicio" src="./res/jaulab.png" alt="Jaulab"> </img> </a>
@@ -26,6 +58,7 @@
         <div class="nav-links">
 	        <div class="links">
 	          <a href="#noticias" class="link">NOTICIAS</a>
+	          <a href="#divulgacion" class="link">DIVULGACIÓN</a>
 	          <a href="#proyecto" class="link">PROYECTO</a>
 	          <a href="#grupo" class="link">GRUPO</a>
 	          <a href="./recursos.html" class="link">RECURSOS</a>
@@ -40,8 +73,9 @@
 	          <a href="#investigacion" onclick="toggleMobileNavigation()">INVESTIGACIÓN</a>
 	          <a href="#contacto" onclick="toggleMobileNavigation()">CONTACTO</a>
 	        </div>
-
+  			</div>
   		</div>
+  		--->
   	</header>
 
   	<main id="content" role="main">
@@ -100,10 +134,10 @@
 
 	  	</section>
 
-	  	<section class="content-container noticias" id="noticias">
-	      <div class="news">
+	  	<section class="content-container noticias-container" id="noticias">
+	      <div class="noticias">
 	      	<div class="grid-item-header">
-	      		<h2 class="text-center">NOTICIAS</h2>
+	      		<h2 class="text-center">DIVULGACIÓN</h2>
 	      	</div>
 	        
 	        <div class="grid-items">
@@ -111,7 +145,7 @@
 	        		<h3 class="text-center">Noche de investigadores</h3>
 	        	</div>
 	        	<div>
-							<img title="Noche invstigadores" src="./res/Slides/Slide_9.jpg" alt="Noche investigadodres" class="news-image"> </img>
+							<img title="Noche invstigadores" src="./res/Slides/Slide_9.jpg" alt="Noche investigadodres" class="noticias-image"> </img>
 						</div>
 						<div>
 							<button type="button" class="mas-button" id="saber-Inv" onclick="saberMas(this.id)">Saber más</button>
@@ -123,7 +157,7 @@
 	        		<h3 class="text-center">NAK festival</h3>
 	        	</div>
 	        	<div>
-							<img title="Nak2" src="./res/noticias/Nak/Nak_3.jpg" alt="Nak2" class="news-image"> </img>
+							<img title="Nak2" src="./res/noticias/Nak/Nak_3.jpg" alt="Nak2" class="noticias-image"> </img>
 						</div>
 						<div>
 							<button type="button" class="mas-button" id="saber-Nak" onclick="saberMas(this.id)">Saber más</button>
@@ -137,7 +171,7 @@
 	        		<h3 class="text-center">Semana de la ciencia</h3>
 	        	</div>
 	        	<div>
-							<img title="SemanaCiencia1" src="./res/noticias/Semana_ciencia/Semana_ciencia_1.jpg" alt="SemanaCiencia1" class="news-image"> </img>
+							<img title="SemanaCiencia1" src="./res/noticias/Semana_ciencia/Semana_ciencia_1.jpg" alt="SemanaCiencia1" class="noticias-image"> </img>
 						</div>
 						<div>
 							<button type="button" class="mas-button" id="saber-Semana" onclick="saberMas(this.id)">Saber más</button>
@@ -149,7 +183,7 @@
 	        		<h3 class="text-center">Pharus UPNA</h3>
 	        	</div>
 	        	<div>
-							<img title="Pharus1" src="./res/noticias/Pharus/Pharus_1.jpg" alt="Pharus1" class="news-image"> </img>
+							<img title="Pharus1" src="./res/noticias/Pharus/Pharus_1.jpg" alt="Pharus1" class="noticias-image"> </img>
 						</div>
 						<div>
 							<button type="button" class="mas-button" id="saber-Pharus" onclick="saberMas(this.id)">Saber más</button>
@@ -161,7 +195,7 @@
 	        		<h3 class="text-center">2º Encuentro Maker 2022 Dictel </h3>
 	        	</div>
 	        	<div>
-							<img title="Maker1" src="./res/noticias/MakerEstella/Maker_1.jpg" alt="Maker1" class="news-image"> </img>
+							<img title="Maker1" src="./res/noticias/MakerEstella/Maker_1.jpg" alt="Maker1" class="noticias-image"> </img>
 						</div>
 						<div>
 							<button type="button" class="mas-button" id="saber-maker" onclick="saberMas(this.id)">Saber más</button>
@@ -173,7 +207,7 @@
 	        		<h3 class="text-center">Festival Entornos de Arte Urbano </h3>
 	        	</div>
 	        	<div>
-							<img title="Entornos1" src="./res/noticias/Entornos/Entornos_1.jpg" alt="Entornos1" class="news-image"> </img>
+							<img title="Entornos1" src="./res/noticias/Entornos/Entornos_1.jpg" alt="Entornos1" class="noticias-image"> </img>
 						</div>
 						<div>
 							<button type="button" class="mas-button" id="saber-Entornos" onclick="saberMas(this.id)">Saber más</button>
