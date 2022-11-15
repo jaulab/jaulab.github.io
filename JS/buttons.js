@@ -39,18 +39,6 @@ function recursosClicked(){
 
 }
 
-let showDrop = false;
-const dropdown = document.getElementById("dropDown-menu");
-function showDropDown(){
-  if (showDrop) {
-    dropdown.style.display = "none";
-    showDrop = false;
-  }
-  else {
-    dropdown.style.display = "flex";
-    showDrop = true;
-  }
-}
 
   //mainBody.innerHTML = "./recursos.html";
 /*
